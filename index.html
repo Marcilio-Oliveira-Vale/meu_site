@@ -2,6 +2,37 @@
 <html>
 
 <head>
+
+  <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyAY5bBXLVHIB1gjBWX80hEU5fuZ3qksY9Q",
+            authDomain: "siteclinica-20ca1.firebaseapp.com",
+            projectId: "siteclinica-20ca1",
+            storageBucket: "siteclinica-20ca1.appspot.com",
+            databaseURL: "https://siteclinica-20ca1-default-rtdb.firebaseio.com",
+            messagingSenderId: "871702274768",
+            appId: "1:871702274768:web:16385287bd62d6ae37b4d5",
+            measurementId: "G-RE23CXHCLE"
+
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="firebase.js"></script>
+
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
