@@ -25,14 +25,14 @@ $(document).ready(function() {
 						var clone = document.querySelector('#medicos-clone').cloneNode( true );
 						clone.setAttribute('id', newId);
 							
-						var img_url = clone.getElementsByClassName("img_url")[0];
-						img_url.setAttribute("src", value2.img_url);
+						//var img_url = clone.getElementsByClassName("img_url")[0];
+						//img_url.setAttribute("src", value2.img_url);
 
-						var nome = clone.getElementsByClassName("nome")[0];
-						nome.textContent = value2.nome;
+						//var nome = clone.getElementsByClassName("nome")[0];
+						//nome.textContent = value2.nome;
 
-						var especialidade = clone.getElementsByClassName("especialidade")[0];
-						especialidade.textContent = value2.desc;
+						///var especialidade = clone.getElementsByClassName("especialidade")[0];
+						//especialidade.textContent = value2.desc;
 
 	
 
