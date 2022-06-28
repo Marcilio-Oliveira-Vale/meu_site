@@ -121,6 +121,8 @@ a:focus {
 }
 
 .hero_area .hero_bg_box img {
+  filter: brightness(.7);
+  
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

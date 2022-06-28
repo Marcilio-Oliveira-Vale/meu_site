@@ -1,7 +1,34 @@
-<!Clinica Facundo Alves html>
 <html>
 
 <head>
+  <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
+    
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js"></script>  
+    
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAY5bBXLVHIB1gjBWX80hEU5fuZ3qksY9Q",
+    authDomain: "siteclinica-20ca1.firebaseapp.com",
+    projectId: "siteclinica-20ca1",
+    storageBucket: "siteclinica-20ca1.appspot.com",
+    databaseURL: "https://siteclinica-20ca1-default-rtdb.firebaseio.com",
+    messagingSenderId: "871702274768",
+    appId: "1:871702274768:web:16385287bd62d6ae37b4d5",
+    measurementId: "G-RE23CXHCLE"
+
+      };
+    // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+     firebase.analytics();
+    </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,6 +58,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <script src="js/firebase_especialistas.js"></script>
 
 </head>
 
@@ -98,16 +126,17 @@
           Incilint sapiente illo quo praesentium officiis laudantium nostrum, ad adipisci cupiditate sit, quisquam aliquid. Officiis laudantium fuga ad voluptas aspernatur error fugiat quos facilis saepe quas fugit, beatae id quisquam.
         </p>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 mx-auto">
+      <div id="medicos-clone" class="row"></div>
+      <div  style="display:none" class="row">
+        <div id="medicos" class="col-sm-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="images/IMG-2325.jpg" alt="">
+              <img class="img_url" src="images/IMG-2325.jpg" alt="">
             </div>
             <div class="detail-box">
               <div class="social_box">
-                <a href="https://www.instagram.com/drsaulocoriolano/">
-                  <i class="fa fa-instagram aria-hidden="true"></i>
+                <a class="insta" href="https://www.instagram.com/drsaulocoriolano/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
                 <a href="">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -119,73 +148,16 @@
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </div>
-              <h5>
+              <h5 class="nome">
                 Saulo Coriolano
               </h5>
-              <h6 class="">
+              <h6 class="especialidade">
                 Cirurgiã - Dentista
               </h6>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/IMG-2324.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="https://www.instagram.com/drjoaoabreujr/">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Abreu Junior
-              </h5>
-              <h6 class="">
-                Cirurgião - Dentista
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/IMG-2326.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <div class="social_box">
-                <a href="https://www.instagram.com/drataynanfacundo/">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5>
-                Taynan Facundo
-              </h5>
-              <h6 class="">
-                Cirurgiã - Dentista
-              </h6>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <div class="btn-box">
         <a href="">
